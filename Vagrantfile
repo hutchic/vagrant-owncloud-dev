@@ -4,7 +4,6 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
-Vagrant.require_plugin "vagrant-hosts"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box"
@@ -13,10 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   	owner: "www-data",
   	group: "www-data",
   	mount_options: ["dmode=770,fmode=770"]
-
-  config.vm.provision :hosts do |provisioner|
-    provisioner.add_host '33.33.33.35', ['owncloud.dev']
-  end
 
   config.vm.provision :shell do |shell|
     shell.inline = "mkdir -p /etc/puppet/modules
