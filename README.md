@@ -12,8 +12,8 @@ VirtualBox https://www.virtualbox.org/
 Instructions
 ============
 
-Clone the repository
-Run vagrant up
-Edit your local hosts file and add
-    33.33.33.35 owncloud.dev
-Visit owncloud.dev in a browser
+- Clone the repository
+- Run vagrant up
+- Edit your local hosts file and add
+  - 33.33.33.35 owncloud.dev
+- Visit owncloud.dev in a browser
