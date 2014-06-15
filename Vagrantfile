@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       (puppet module list |grep  example42-php) || puppet module install example42/php
       (puppet module list |grep  puppetlabs-git) || puppet module install puppetlabs/git
       (puppet module list |grep  mhuffnagle-make) || puppet module install mhuffnagle/make
+      (puppet module list |grep  willdurand-composer) || puppet module install willdurand/composer
       apt-get update"
   end
 

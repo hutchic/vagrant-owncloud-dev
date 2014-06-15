@@ -1,1 +1,1 @@
-require 'owncloud-dev::from_source'
+require 'owncloud-dev'
